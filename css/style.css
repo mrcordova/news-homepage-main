@@ -17,8 +17,10 @@ main {
   gap: 2rem;
   /* margin: 3rem; */
 }
-
-menu {
+#desktop-menu {
+  display: none;
+}
+#mobile-menu {
   display: flex;
   list-style: none;
   flex-direction: column;
@@ -121,5 +123,10 @@ li {
   #menupopover {
     background-color: transparent;
     border: 0;
+  }
+  #desktop-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
   }
 }
