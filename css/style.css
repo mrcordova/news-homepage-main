@@ -9,4 +9,38 @@ main {
   place-content: safe center;
   height: 100vh;
   height: 100dvh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.main-img {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.main-title {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.main-article {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.main-new-section {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.main-top-3 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top-con {
+  display: flex;
 }
