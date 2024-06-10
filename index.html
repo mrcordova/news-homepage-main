@@ -28,27 +28,28 @@
   <body>
     <header>
       <img src="./assets/images/logo.svg" alt="company logo, W with dot" />
-      <nav id="navbar" popover>
-        <!-- <dialog open> -->
-        <button popovertarget="navbar">
-          <a href="#" class="close" aria-label="close main menu">
-            <img
-              class="nav-btn-img"
-              src="./assets/images/icon-menu-close.svg"
-              alt="X" />
-            <p aria-hidden="true">close</p>
-          </a>
-        </button>
-        <menu>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">New</a></li>
-          <li><a href="#">Popular</a></li>
-          <li><a href="#">Trending</a></li>
-          <li><a href="#">Categories</a></li>
-        </menu>
-        <!-- </dialog> -->
+              <div id="menupopover" popover>
+                <nav id="navbar" >
+                
+                    <button popovertarget="menupopover" popovertargetaction="hide">
+                      <a href="#" class="close" aria-label="close main menu">
+                        <img
+                      class="nav-btn-img"
+                    src="./assets/images/icon-menu-close.svg"
+                  alt="X" />
+                <p aria-hidden="true">close</p>
+              </a>
+            </button>
+          <menu>
+    <li><a href="#">Home</a></li>
+  <li><a href="#">New</a></li>
+<li><a href="#">Popular</a></li>
+<li><a href="#">Trending</a></li>
+<li><a href="#">Categories</a></li>
+</menu>
+</div>
       </nav>
-      <button popovertarget="navbar">
+      <button popovertarget="menupopover" popovertargetaction="show">
         <a href="#navbar" class="hamburger" aria-label="open main menu">
           <img
             class="nav-btn-img"

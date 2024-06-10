@@ -21,6 +21,7 @@ main {
 menu {
   display: flex;
   list-style: none;
+  flex-direction: column;
   gap: 2rem;
   /* margin-inline-start: auto; */
 }
@@ -28,6 +29,12 @@ menu {
 nav {
   margin-inline-start: auto;
 }
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+}
+
 li {
   flex: 1;
 }
@@ -108,7 +115,7 @@ li {
     grid-row: 3;
   }
   .hamburger,
-  .close {
+  #navbar {
     display: none;
   }
 }
