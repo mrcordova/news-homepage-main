@@ -70,6 +70,15 @@ main {
 #desktop-menu {
   display: none;
 }
+
+#desktop-menu > li > a {
+  text-decoration: none;
+  color: var(--dark-grayish-blue);
+}
+
+#desktop-menu > li > a:hover {
+  color: var(--soft-red);
+}
 #mobile-menu {
   display: flex;
   list-style: none;
