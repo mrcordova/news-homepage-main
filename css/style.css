@@ -121,6 +121,25 @@ button:hover {
   object-fit: cover;
 }
 
+.main-new-section {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 3.9rem;
+  background-color: var(--very-dark-blue);
+  color: var(--off-white);
+  padding-inline: 1.4rem;
+  padding-block: 1.1rem;
+}
+
+.main-new-section-heading {
+  color: var(--soft-orange);
+  font-size: 2rem;
+}
+
+.main-new-section-article {
+  border-bottom: 1px solid var(--dark-grayish-blue);
+}
+
 .main-top-3 {
   display: flex;
   flex-wrap: wrap;
