@@ -138,6 +138,18 @@ button:hover {
 
 .main-new-section-article {
   border-bottom: 1px solid var(--dark-grayish-blue);
+  padding-block: 1.4rem;
+}
+
+.main-new-section-article > h3 {
+  font-size: 1.25rem;
+  padding-block-end: 0.4rem;
+  color: var(--off-white);
+}
+
+.main-new-section-article > p {
+  font-size: 0.93rem;
+  color: var(--grayish-blue);
 }
 
 .main-top-3 {
