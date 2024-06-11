@@ -198,7 +198,7 @@ button:hover {
   flex-wrap: wrap;
   /* flex: 1; */
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 1.4rem;
   margin-block-end: 2.1rem;
 }
 .top-content {
