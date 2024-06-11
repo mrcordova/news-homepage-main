@@ -97,9 +97,9 @@ button:hover {
   width: 50%;
   height: 100vh;
   height: 100dvh;
-  position: absolute;
+  position: fixed;
   inset: unset;
-  top: 0;
+  bottom: 0;
   right: 0;
   border: 0;
 }
