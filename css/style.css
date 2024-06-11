@@ -83,7 +83,6 @@ main {
   align-self: flex-end;
 }
 #first-top {
-  margin-block-start: 4rem;
 }
 
 nav {
@@ -175,9 +174,10 @@ button:hover {
 .main-top-3 {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.95rem;
+  margin-block-start: 4rem;
   /* flex: 1; */
-  /* justify-content: space-evenly; */
+  justify-content: center;
 }
 
 .read-btn {
@@ -196,17 +196,16 @@ button:hover {
 .top-con {
   display: flex;
   flex-wrap: wrap;
-  /* flex: 1; */
+
   align-items: flex-start;
   gap: 1.4rem;
-  margin-block-end: 2.1rem;
+  /* margin-block-end: 2.1rem; */
 }
 .top-content {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   flex: 1;
-
   line-height: 1;
 }
 .top-content > h2 {
@@ -227,6 +226,7 @@ button:hover {
   font-size: 0.95rem;
   color: var(--dark-grayish-blue);
   line-height: 1.65;
+  max-width: 24ch;
 }
 
 .top-img {
@@ -278,9 +278,13 @@ button:hover {
   .main-top-3 {
     grid-column: 1 / -1;
     grid-row: 3;
+    gap: 0;
   }
 
-  #first-top {
+  .top-con {
+    flex: 1;
+  }
+  /* #first-top {
     grid-column: 1;
     grid-row: 3;
   }
@@ -291,7 +295,7 @@ button:hover {
   #third-top {
     grid-column: 3;
     grid-row: 3;
-  }
+  } */
   .hamburger,
   #navbar {
     display: none;
