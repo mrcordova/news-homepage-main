@@ -33,14 +33,27 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  margin-block: 1.8rem;
 }
 
 body {
-  margin-block: 1.8rem;
-  margin-inline: 0.5rem;
   background-color: var(--off-white);
-  height: 100%;
+  display: grid;
+  place-content: safe center;
+  /* height: 100vh; */
   /* height: 100dvh; */
+  height: 100%;
+
+  /* DEsktop */
+  /* inline-size: minmax(0, 89rem); */
+  /* inline-size: 89rem; */
+  /* block-size: 50rem; */
+
+  /* Mobile */
+  /* margin-block: 1.8rem; */
+  margin-inline: 0.5rem;
+  margin-block: 1.95rem;
 }
 
 main {
@@ -48,9 +61,9 @@ main {
   place-content: safe center;
   /* height: 100vh; */
   height: 100%;
-
-  /* gap: 1.5rem; */
-  margin-block: 1.95rem;
+  /* Mobile */
+  /* margin-block: 1.95rem; */
+  /* margin-inline: 0.5rem; */
 }
 
 .main-title {
@@ -143,7 +156,7 @@ button:hover {
   display: flex;
   flex-direction: column;
 
-  justify-content: center;
+  justify-content: flex-start;
   margin-block-start: 3.9rem;
   background-color: var(--very-dark-blue);
   color: var(--off-white);
@@ -269,7 +282,7 @@ button:hover {
 @media (min-width: 35rem) {
   main {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-rows: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr)) minmax(0, auto-fit);
   }
 
   picture {
