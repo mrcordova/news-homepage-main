@@ -83,7 +83,21 @@ main {
   align-self: flex-end;
 }
 #first-top {
-  margin-block-start: 1rem;
+  margin-block-start: 4rem;
+}
+
+.top-content > h2 {
+  color: var(--soft-red);
+  font-size: 2rem;
+}
+.top-content > p[role="doc-subtitle"] {
+  font-size: 1.15rem;
+  padding-block-end: 0.5rem;
+}
+.top-content > p:nth-child(2 of p) {
+  /* background-color: aqua; */
+  font-size: 1rem;
+  color: var(--dark-grayish-blue);
 }
 nav {
   margin-inline-start: auto;
