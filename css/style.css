@@ -74,15 +74,19 @@ main {
   display: flex;
   list-style: none;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.2rem;
 
+  padding-inline-start: 1rem;
   /* margin-inline-start: auto; */
 }
-
+#mobile-menu > li > a {
+  text-decoration: none;
+  color: var(--very-dark-blue);
+  font-size: 1.2rem;
+}
 #close-btn {
   align-self: flex-end;
-}
-#first-top {
+  padding-inline-end: 0.5rem;
 }
 
 nav {
@@ -92,6 +96,9 @@ nav {
 #navbar {
   display: flex;
   flex-direction: column;
+  gap: 5.1rem;
+
+  margin-block-start: 1.5rem;
 }
 
 li {
@@ -237,7 +244,8 @@ button:hover {
 }
 
 :popover-open {
-  width: 50%;
+  width: 69%;
+  /* width: 50%; */
   height: 100vh;
   height: 100dvh;
   position: fixed;
