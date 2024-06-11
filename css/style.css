@@ -82,7 +82,9 @@ main {
 #close-btn {
   align-self: flex-end;
 }
-
+#first-top {
+  margin-block-start: 1rem;
+}
 nav {
   margin-inline-start: auto;
 }
@@ -143,10 +145,6 @@ button:hover {
   border-bottom: 1px solid var(--dark-grayish-blue);
   padding-block-end: 1.8rem;
 }
-.main-new-section-article:is(:nth-child(3), :last-child) {
-  border-bottom: 1px solid var(--dark-grayish-blue);
-  padding-block: 1.7rem 1.8rem;
-}
 
 .main-new-section-article > h3 {
   font-size: 1.25rem;
@@ -161,6 +159,11 @@ button:hover {
 }
 .main-new-section-article:last-child {
   border-bottom: 0;
+  padding-block: 1.7rem 1.6rem;
+}
+
+:nth-child(2 of .main-new-section-article) {
+  padding-block: 1.7rem 1.8rem;
 }
 
 .main-top-3 {
