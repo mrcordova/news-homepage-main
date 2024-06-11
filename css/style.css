@@ -49,9 +49,24 @@ main {
   /* height: 100vh; */
   height: 100%;
 
-  gap: 1rem;
+  /* gap: 1.5rem; */
   margin-block: 1.95rem;
 }
+
+.main-title {
+  font-size: 2.5rem;
+  line-height: 1;
+  padding-block-start: 1.5rem;
+  /* max-width: 40ch; */
+}
+
+.main-article {
+  font-size: 0.9375rem;
+  color: var(--dark-grayish-blue);
+  padding-block-start: 1.1rem;
+  line-height: 1.7;
+}
+
 #desktop-menu {
   display: none;
 }
