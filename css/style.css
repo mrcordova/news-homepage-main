@@ -124,21 +124,28 @@ button:hover {
 .main-new-section {
   display: flex;
   flex-direction: column;
+
+  justify-content: center;
   margin-block-start: 3.9rem;
   background-color: var(--very-dark-blue);
   color: var(--off-white);
   padding-inline: 1.4rem;
-  padding-block: 1.1rem;
+  padding-block: 1.1rem 0rem;
 }
 
 .main-new-section-heading {
   color: var(--soft-orange);
   font-size: 2rem;
+  padding-block-end: 1.4rem;
 }
 
 .main-new-section-article {
   border-bottom: 1px solid var(--dark-grayish-blue);
-  padding-block: 1.4rem;
+  padding-block-end: 1.8rem;
+}
+.main-new-section-article:is(:nth-child(3), :last-child) {
+  border-bottom: 1px solid var(--dark-grayish-blue);
+  padding-block: 1.7rem 1.8rem;
 }
 
 .main-new-section-article > h3 {
@@ -150,6 +157,10 @@ button:hover {
 .main-new-section-article > p {
   font-size: 0.93rem;
   color: var(--grayish-blue);
+  line-height: 1.7;
+}
+.main-new-section-article:last-child {
+  border-bottom: 0;
 }
 
 .main-top-3 {
