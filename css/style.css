@@ -273,6 +273,7 @@ button:hover {
   .main-new-section {
     grid-column: 3;
     grid-row: 1 / span 2;
+    margin-block-start: 0;
   }
 
   .main-top-3 {
