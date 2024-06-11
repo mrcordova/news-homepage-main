@@ -129,6 +129,19 @@ button:hover {
   /* justify-content: space-evenly; */
 }
 
+.read-btn {
+  background-color: var(--soft-red);
+  color: var(--very-dark-blue);
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  padding-inline: 1.9rem;
+  padding-block: 0.75rem 0.7rem;
+  margin-block-start: 1.4rem;
+}
+.read-btn:hover {
+  color: var(--off-white);
+  background-color: var(--very-dark-blue);
+}
 .top-con {
   display: flex;
   flex-wrap: wrap;
