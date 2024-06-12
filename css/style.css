@@ -241,10 +241,13 @@ picture {
 .main-top-3 {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.95rem;
-  margin-block-start: 4rem;
-  /* flex: 1; */
   justify-content: center;
+  /* Mobile */
+  /* gap: 1.95rem; */
+  /* margin-block-start: 4rem; */
+  /* Desktop */
+  gap: 1.7rem;
+  margin-block-start: 4.5rem;
 }
 
 .read-btn {
@@ -267,6 +270,15 @@ picture {
   color: var(--off-white);
   background-color: var(--very-dark-blue);
 }
+
+#second-top {
+  /* Desktop */
+  /* padding-inline-start: 0.9rem; */
+}
+#third-top {
+  /* Desktop */
+  /* padding-inline-start: 3.4rem; */
+}
 .top-con {
   display: flex;
   flex-wrap: wrap;
@@ -288,7 +300,11 @@ picture {
   padding-block-end: 1rem;
 }
 .top-content > p[role="doc-subtitle"] {
-  font-size: 1.15rem;
+  /* Mobile */
+  /* font-size: 1.15rem; */
+  /* padding-block-end: 0.75rem; */
+  /* Desktop */
+  font-size: 1.13rem;
   padding-block-end: 0.75rem;
 }
 
@@ -354,7 +370,7 @@ picture {
   .main-top-3 {
     grid-column: 1 / -1;
     grid-row: 3;
-    gap: 0;
+    /* gap: 0; */
     /* margin-block-start: 0; */
   }
 
