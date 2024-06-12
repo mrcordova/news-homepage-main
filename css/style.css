@@ -34,36 +34,32 @@ header {
   align-items: center;
   justify-content: space-between;
 
-  margin-block: 1.8rem;
+  /* Mobile */
+  margin-block-end: 1.8rem;
 }
 
 body {
   background-color: var(--off-white);
   display: grid;
   place-content: safe center;
-  /* height: 100vh; */
-  /* height: 100dvh; */
+
   height: 100%;
-
-  /* DEsktop */
-  /* inline-size: minmax(0, 89rem); */
-  /* inline-size: 89rem; */
-  /* block-size: 50rem; */
-
+  /* Desktop */
+  padding-inline: 10.3rem;
+  padding-block: 6rem;
   /* Mobile */
-  /* margin-block: 1.8rem; */
-  margin-inline: 0.5rem;
-  margin-block: 1.95rem;
+  /* padding-block: 1.95rem; */
+  /* padding-inline: 0.5rem; */
 }
 
 main {
   display: grid;
   place-content: safe center;
   /* height: 100vh; */
-  height: 100%;
+  /* height: 100%; */
   /* Mobile */
-  /* margin-block: 1.95rem; */
-  /* margin-inline: 0.5rem; */
+  /* margin-block: 1.95rem;
+  margin-inline: 0.5rem; */
 }
 
 .main-title {
@@ -282,7 +278,8 @@ button:hover {
 @media (min-width: 35rem) {
   main {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-rows: repeat(2, minmax(0, 1fr)) minmax(0, auto-fit);
+    grid-template-rows: repeat(1, minmax(0, 1fr)) auto auto;
+    /* gap: 3rem; */
   }
 
   picture {
@@ -310,6 +307,7 @@ button:hover {
     grid-column: 1 / -1;
     grid-row: 3;
     gap: 0;
+    /* margin-block-start: 0; */
   }
 
   .top-con {
