@@ -65,10 +65,15 @@ main {
 }
 
 .main-title {
-  font-size: 2.5rem;
+  /* Mobile */
+  /* font-size: 2.5rem; */
+  /* line-height: 1; */
+  /* padding-block-start: 1.5rem; */
+
+  /* Desktop */
+  font-size: 3.5rem;
   line-height: 1;
-  padding-block-start: 1.5rem;
-  /* max-width: 40ch; */
+  padding-block-start: 2rem;
 }
 
 .main-article {
@@ -148,6 +153,7 @@ picture {
 .logo-img {
   /* Mobile */
   /* width: 2.85rem; */
+
   /* Desktop */
   width: 4rem;
 }
