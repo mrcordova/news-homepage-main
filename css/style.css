@@ -142,7 +142,9 @@ button > p {
 button:hover {
   cursor: pointer;
 }
-
+picture {
+  margin-inline-end: 0.6rem;
+}
 .logo-img {
   /* Mobile */
   /* width: 2.85rem; */
@@ -166,6 +168,8 @@ button:hover {
   color: var(--off-white);
   padding-inline: 1.4rem;
   padding-block: 1.1rem 0rem;
+  /* Desktop */
+  margin-inline-start: 1.3rem;
 }
 
 .main-new-section-heading {
