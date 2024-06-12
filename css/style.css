@@ -34,8 +34,10 @@ header {
   align-items: center;
   justify-content: space-between;
 
+  /* Desktop */
+  margin-block-end: 3.6rem;
   /* Mobile */
-  margin-block-end: 1.8rem;
+  /* margin-block-end: 1.8rem; */
 }
 
 body {
@@ -46,7 +48,7 @@ body {
   height: 100%;
   /* Desktop */
   padding-inline: 10.3rem;
-  padding-block: 6rem;
+  padding-block: 5.5rem;
   /* Mobile */
   /* padding-block: 1.95rem; */
   /* padding-inline: 0.5rem; */
@@ -78,11 +80,14 @@ main {
 
 #desktop-menu {
   display: none;
+  gap: 2.5rem;
+  padding-inline-start: 0;
 }
 
 #desktop-menu > li > a {
   text-decoration: none;
   color: var(--dark-grayish-blue);
+  font-size: 0.95rem;
 }
 
 #desktop-menu > li > a:hover {
@@ -139,7 +144,10 @@ button:hover {
 }
 
 .logo-img {
-  width: 2.85rem;
+  /* Mobile */
+  /* width: 2.85rem; */
+  /* Desktop */
+  width: 4rem;
 }
 
 .main-img {
@@ -341,7 +349,6 @@ button:hover {
   #desktop-menu {
     display: flex;
     list-style: none;
-    gap: 2rem;
   }
 
   ::backdrop {
