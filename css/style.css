@@ -206,9 +206,13 @@ picture {
 }
 
 .main-new-section-article > h3 {
-  font-size: 1.25rem;
-  padding-block-end: 0.4rem;
   color: var(--off-white);
+  /* Mobile */
+  /* font-size: 1.25rem; */
+  /* padding-block-end: 0.4rem; */
+  /* Desktop */
+  font-size: 1.27rem;
+  padding-block-end: 0.4rem;
 }
 
 .main-new-section-article > h3:hover {
@@ -217,9 +221,13 @@ picture {
 }
 
 .main-new-section-article > p {
-  font-size: 0.93rem;
   color: var(--grayish-blue);
-  line-height: 1.7;
+  /* Mobile */
+  /* font-size: 0.93rem; */
+  /* line-height: 1.7; */
+  /* Desktop */
+  font-size: 0.9375rem;
+  line-height: 1.65;
 }
 .main-new-section-article:last-child {
   border-bottom: 0;
