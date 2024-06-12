@@ -63,6 +63,7 @@ main {
   place-content: safe center;
   /* height: 100vh; */
   /* height: 100%; */
+
   /* Mobile */
   /* margin-block: 1.95rem;
   margin-inline: 0.5rem; */
@@ -74,10 +75,13 @@ main {
   /* line-height: 1; */
   /* padding-block-start: 1.5rem; */
 
-  /* Desktop */
-  font-size: 3.5rem;
+  font-size: clamp(2.5rem, 2.1479rem + 1.5023vw, 3.5rem);
+  padding-block-start: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
   line-height: 1;
-  padding-block-start: 2rem;
+  /* Desktop */
+  /* font-size: 3.5rem; */
+  /* line-height: 1; */
+  /* padding-block-start: 2rem; */
 }
 
 .main-article {
@@ -87,12 +91,17 @@ main {
   /* padding-block-start: 1.1rem; */
   /* line-height: 1.7; */
 
-  /* Desktop */
   font-size: 0.9375rem;
+  padding-block-start: clamp(1.1rem, 0.8535rem + 1.0516vw, 1.8rem);
   max-width: 38ch;
-  padding-block-start: 1.8rem;
-  padding-inline-start: 0.5rem;
   line-height: 1.7;
+  padding-inline-start: clamp(0rem, -0.1761rem + 0.7512vw, 0.5rem);
+  /* Desktop */
+  /* font-size: 0.9375rem; */
+  /* max-width: 38ch; */
+  /* padding-block-start: 1.8rem; */
+  /* padding-inline-start: 0.5rem; */
+  /* line-height: 1.7; */
 }
 
 #desktop-menu {
@@ -160,14 +169,16 @@ button:hover {
   cursor: pointer;
 }
 picture {
-  margin-inline-end: 0.6rem;
+  margin-inline-end: clamp(0rem, -0.2113rem + 0.9014vw, 0.6rem);
+  /* Desktop */
+  /* margin-inline-end: 0.6rem; */
 }
 .logo-img {
   /* Mobile */
   /* width: 2.85rem; */
-
+  width: clamp(2.85rem, 2.4451rem + 1.7277vw, 4rem);
   /* Desktop */
-  width: 4rem;
+  /* width: 4rem; */
 }
 
 .main-img {
@@ -186,6 +197,7 @@ picture {
   /* margin-block-start: 3.9rem; */
   /* padding-inline: 1.4rem; */
   /* padding-block: 1.1rem 0rem; */
+
   /* Desktop */
   padding-inline: 1.4rem;
   padding-block: 1.1rem 0rem;
